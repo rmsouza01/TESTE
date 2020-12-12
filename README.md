@@ -7,8 +7,7 @@ The dataset is currently composed of  3D, T1-weighted reconstructed brain MR ima
 
 ## Dataset Folder Structure
 
-... bash
-
+```console
 CC359/
 ├── DATS.json
 ├── Raw-data
@@ -44,7 +43,7 @@ CC359/
     ├── Original.zip
     ├── Silver-standard-machine-learning.zip
     └── Silver-standard-STAPLE.zip
-...
+```
 
 
 ## Reconstructed Data: Multi-vendor, multi-field-strength T1-weighted brain MR Images

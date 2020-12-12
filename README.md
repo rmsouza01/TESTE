@@ -8,40 +8,29 @@ The dataset is currently composed of  3D, T1-weighted reconstructed brain MR ima
 ## Dataset Folder Structure
 
 CC359/
+├── README.txt
 ├── DATS.json
-├── Raw-data
-│   ├── Multi-channel
-│   │   ├── 12-channel
-│   │   │   ├── test_12_channel.zip
-│   │   │   └── train_val_12_channel.zip
-│   │   └── 32-channel
-│   │       ├── e15937s4_P04096.7.h5
-│   │       ├── e16402s3_P13824.7.h5
-│   │       ├── e16408s3_P11776.7.h5
-│   │       ├── e16424s3_P42496.7.h5
-│   │       ├── e16430s3_P17920.7.h5
-│   │       ├── e16431s4_P27136.7.h5
-│   │       ├── e16458s3_P33280.7.h5
-│   │       ├── e16460s3_P51200.7.h5
-│   │       ├── e16461s3_P59904.7.h5
-│   │       ├── e16475s3_P17920.7.h5
-│   │       ├── e16477s3_P33280.7.h5
-│   │       ├── e16509s3_P53248.7.h5
-│   │       └── test_32_channel.zip
-│   └── Single-channel
-│       ├── Train_part1.zip
-│       ├── Train_part2.zip
-│       ├── Train_part3.zip
-│       └── Val.zip
-├── README.md
 └── Reconstructed
-    ├── hippocampus_staple.zip
-    ├── hippocampus_subfields_freesurfer.zip
-    ├── Manual-BEaST-mask-correction.zip
-    ├── Manual.zip
-    ├── Original.zip
-    ├── Silver-standard-machine-learning.zip
-    └── Silver-standard-STAPLE.zip
+│   ├── hippocampus_staple.zip -> Silver-standard hippocampus maks generated using STAPLE
+│   ├── hippocampus_subfields_freesurfer.zip -> Hippocampus subfileds masks obtained with FreeSurfer 6.0
+│   ├── Manual-BEaST-mask-correction.zip -> Manual brain segmentation obtained by fixing BEaST masks (12 subjects)
+│   ├── Manual.zip -> Manual brain segmentation (12 subjects)
+│   ├── Original.zip -> Original images 
+│   ├── Silver-standard-machine-learning.zip -> Silver-standard brain maks generated using a machine learning method
+|   └── Silver-standard-STAPLE.zip -> Silver-standard brain maks generated using STAPLE
+│
+└── Raw-data
+    ├── Multi-channel
+    │   ├── 12-channel
+    │   │   ├── test_12_channel.zip -> Undersampled 12-channel test set for R = 5 and R = 10
+    │   │   └── train_val_12_channel.zip -> Fully sampled 12-channel train and validation data
+    │   └── 32-channel
+    │       └── test_32_channel.zip -> Undersampled 32-channel test set for R = 5 and R = 10
+    └── Single-channel (Simulated single-channel raw MR data - DISCONTINUED)
+        ├── Train_part1.zip
+        ├── Train_part2.zip
+        ├── Train_part3.zip
+        └── Val.zip
 
 
 ## Reconstructed Data: Multi-vendor, multi-field-strength T1-weighted brain MR Images

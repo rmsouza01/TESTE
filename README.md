@@ -9,50 +9,50 @@ The dataset is currently composed of  3D, T1-weighted reconstructed brain MR ima
 
 CC359/
 
-├── README.txt
+ ├── README.txt
 
-├── DATS.json
+ ├── DATS.json
 
-└── Reconstructed
+ └── Reconstructed
 
-│   ├── hippocampus_staple.zip -> Silver-standard hippocampus maks generated using STAPLE
+ │   ├── hippocampus_staple.zip -> Silver-standard hippocampus maks generated using STAPLE
 
-│   ├── hippocampus_subfields_freesurfer.zip -> Hippocampus subfileds masks obtained with FreeSurfer 6.0
+ │   ├── hippocampus_subfields_freesurfer.zip -> Hippocampus subfileds masks obtained with FreeSurfer 6.0
 
-│   ├── Manual-BEaST-mask-correction.zip -> Manual brain segmentation obtained by fixing BEaST masks (12 subjects)
+ │   ├── Manual-BEaST-mask-correction.zip -> Manual brain segmentation obtained by fixing BEaST masks (12 subjects)
 
-│   ├── Manual.zip -> Manual brain segmentation (12 subjects)
+ │   ├── Manual.zip -> Manual brain segmentation (12 subjects)
 
-│   ├── Original.zip -> Original images 
+ │   ├── Original.zip -> Original images 
 
-│   ├── Silver-standard-machine-learning.zip -> Silver-standard brain maks generated using a machine learning method
+ │   ├── Silver-standard-machine-learning.zip -> Silver-standard brain maks generated using a machine learning method
 
-|   └── Silver-standard-STAPLE.zip -> Silver-standard brain maks generated using STAPLE
+ |   └── Silver-standard-STAPLE.zip -> Silver-standard brain maks generated using STAPLE
 
-│
+ │
 
-└── Raw-data
+ └── Raw-data
 
-├── Multi-channel
+  ├── Multi-channel
 
-│   ├── 12-channel
+  │   ├── 12-channel
 
-│   │   ├── test_12_channel.zip -> Undersampled 12-channel test set for R = 5 and R = 10
+  │   │   ├── test_12_channel.zip -> Undersampled 12-channel test set for R = 5 and R = 10
 
-│   │   └── train_val_12_channel.zip -> Fully sampled 12-channel train and validation data
+  │   │   └── train_val_12_channel.zip -> Fully sampled 12-channel train and validation data
 
-│   └── 32-channel
+  │   └── 32-channel
 
-│       └── test_32_channel.zip -> Undersampled 32-channel test set for R = 5 and R = 10
-    └── Single-channel (Simulated single-channel raw MR data - DISCONTINUED)
+  │       └── test_32_channel.zip -> Undersampled 32-channel test set for R = 5 and R = 10
+  └── Single-channel (Simulated single-channel raw MR data - DISCONTINUED)
 
-├── Train_part1.zip
+      ├── Train_part1.zip
 
-├── Train_part2.zip
+      ├── Train_part2.zip
 
-├── Train_part3.zip
+      ├── Train_part3.zip
 
-└── Val.zip
+      └── Val.zip
 
 
 
